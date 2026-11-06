@@ -1,0 +1,26 @@
+meta {
+  name: Test 8: Ogiltig bokning
+  type: http
+  seq: 8
+}
+
+post {
+  url: {{baseUrl}}/bookings
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "name": "",
+    "email": "fel-e-post",
+    "dateTime": "2020-01-01T12:00",
+    "numberOfPeople": 0,
+    "status": "WRONG"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

@@ -1,0 +1,26 @@
+meta {
+  name: Test 5: Uppdatera bokningen
+  type: http
+  seq: 5
+}
+
+put {
+  url: {{baseUrl}}/bookings/1
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "name": "Anna Andersson",
+    "email": "anna@example.com",
+    "dateTime": "2027-05-20T18:30",
+    "numberOfPeople": 5,
+    "status": "CONFIRMED"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

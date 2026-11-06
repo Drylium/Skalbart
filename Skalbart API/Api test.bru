@@ -1,0 +1,15 @@
+meta {
+  name: Api test
+  type: http
+  seq: 9
+}
+
+get {
+  url: {{baseUrl}}/instance
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}

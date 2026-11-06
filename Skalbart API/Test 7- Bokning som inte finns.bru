@@ -1,0 +1,15 @@
+meta {
+  name: Test 7: Bokning som inte finns
+  type: http
+  seq: 7
+}
+
+get {
+  url: {{baseUrl}}/bookings/99999
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}

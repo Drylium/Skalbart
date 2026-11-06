@@ -1,0 +1,15 @@
+meta {
+  name: Test 1: Hämta instansen
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/instance
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}

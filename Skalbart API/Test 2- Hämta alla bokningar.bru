@@ -1,0 +1,15 @@
+meta {
+  name: Test 2: Hämta alla bokningar
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{baseUrl}}/bookings
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}

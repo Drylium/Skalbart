@@ -1,0 +1,16 @@
+config:
+  target: "http://localhost:3000"
+  phases:
+    - duration: 10
+      arrivalRate: 2
+      name: Basic API test
+
+scenarios:
+  - name: Check API endpoints
+    flow:
+      - get:
+          url: "/"
+      - get:
+          url: "/instance"
+      - get:
+          url: "/bookings"
